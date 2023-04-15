@@ -1,0 +1,470 @@
+/*
+Theme Name: Rihana
+Theme URI: https://ownsource.org
+Author: Ahmed Basioni
+Author URI: https://ownsource.org
+Description: Rihana brings your site to life with immersive featured images and subtle animations. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rihana
+*/
+
+:root {
+  --rihana-main-color: #EF7910;
+  --rihana-headings-text-fontfamily: "Lato", sans-serif;
+  --rihana-body-text-fontfamily: "Cabin Condensed", sans-serif;
+  --rihana-body-text-size: 14px;
+  --rihana-primarymenu-text-size: 14px;
+}
+
+body{
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:  var(--rihana-headings-text-fontfamily);
+}
+
+h1 { font-size: 60px; }
+h2 { font-size: 55px; }
+h3 { font-size: 48px ; }
+h4 { font-size: 40px; }
+h5 { font-size: 32px; }
+h6 { font-size: 24px; }
+
+
+  /***********************  Top Bar Styles **************************/
+ .top-nav-bar{
+ 	padding: 5px 5px;
+	color: #FFFFFF;
+	background-color: #282828;
+	display: inline-block;
+} 
+
+ .top-nav-bar .menu{
+ 	display: inline-block;
+	color: #FFFFFF;
+	background-color: #282828;
+	list-style: none;
+} 
+ .top-nav-bar .menu a{
+	padding: 10px 5px;
+	color:  var(--rihana-main-color);
+	text-decoration: none;
+} 
+
+ .top-nav-bar .menu li{
+	position: relative;
+	display: inline-block;
+} 
+ .top-nav-bar .menu li:first-child a{
+	padding-left: 0;
+}
+
+ .top-nav-bar .menu li:last-child a{
+	padding-right: 0;
+} 
+
+ .top-nav-bar .menu li .sub-menu{
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 100%;
+	left: 0;
+	list-style-type: none;
+	width: 300px;
+	background-color: #282828;
+	margin: 0;
+	padding: 0;
+} 
+
+
+ .top-nav-bar .menu li .sub-menu a{
+	display: block;
+	padding: 0 15px;
+	color: #FFFFFF;
+} 
+
+ .top-nav-bar .menu > .menu-item-has-children:hover > .sub-menu{
+	color: red;
+	display: block;
+} 
+
+ .top-nav-bar .menu li .sub-menu li .sub-menu li{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+
+
+ .top-nav-bar .menu li .sub-menu li .sub-menu a{
+	display: block;
+	padding: 0 15px;
+	color: #FFFFFF;
+} 
+
+ .top-nav-bar .menu .sub-menu li .menu-item-has-children:hover .sub-menu{
+	display: block;
+} 
+
+/***********************  Top Middle Center Widget Styles **************************/
+.top-middle-area {
+	margin: 25px;
+	padding: 5px;
+	font-size: 18px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+}
+.top-middle-area input{
+	padding: 10px 15px;
+	margin: 0 auto;
+}
+.top-middle-area button{
+	border: 1px;
+	padding: 10px 15px;
+	color: #FFFFFF;
+	background-color: var(--rihana-main-color);
+}
+/***********************  Logo Styles Styles **************************/
+.custom-logo{
+	margin: 20px;
+	text-align: center;
+} 
+.custom-logo-link {
+	text-align: center;
+} 
+.custom-logo-link img{
+	margin: 20px;
+	text-align: center;
+} 
+
+/***********************  Right Middle Cart and Search Area Styles **************************/
+.right-middle-area {
+	margin: 0 auto;
+	padding: 40px 25px;
+	font-size: 28px;
+	text-align: center;
+	display: block;
+	color: #282828;
+}
+.right-middle-area > a , i{
+	display: inline-block;
+	text-align: center;
+
+	margin: 5px;
+	padding: 3px;
+	color: #282828;
+}
+/***********************  Primary Main Menu  Styles **************************/
+.primary-menu{
+  	color: #6F6F6F;
+	background-color: #FFFFFF;
+	border-bottom: 2px solid var(--rihana-main-color);
+	padding: 0;
+	margin: 20px 0;
+	font-size: 16px;
+	list-style: none;
+} 
+
+ .primary-menu li{
+	position: relative;
+ 	display: inline-block;
+ 	padding: 0;
+	margin: 20px 5px;
+	
+} 
+
+.primary-menu li a{
+ 	text-decoration: none;
+ 	color: #6F6F6F;
+	padding: 15px 5px;
+} 
+
+.primary-menu li a:hover{
+ 	color: var(--rihana-main-color);
+} 
+.primary-menu li:first-child a{
+	padding-left: 0;
+}
+
+.primary-menu li:last-child a{
+	padding-right: 0;
+} 
+
+.primary-menu li .sub-menu{
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 100%;
+	left: 0;
+	list-style-type: none;
+	width: 300px;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+} 
+
+.primary-menu li .sub-menu a{
+	display: block;
+	padding: 0 15px;
+	color: var(--rihana-main-color);
+} 
+
+.primary-menu > .menu-item-has-children:hover > .sub-menu{
+	color: red;
+	display: block;
+} 
+
+.primary-menu li .sub-menu li .sub-menu li{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+
+
+.primary-menu li .sub-menu li .sub-menu a{
+	display: block;
+	padding: 0 15px;
+	color: #FFFFFF;
+} 
+
+.primary-menu .sub-menu li .menu-item-has-children:hover .sub-menu{
+	display: block;
+} 
+
+/* Pages Containers Styles */
+
+.home2 {
+background: #F0F0F0;
+}
+
+.shoppage{
+background: #F0F0F0;
+}
+.sticky-post-1, .sticky-post-2, .sticky-post-3, .sticky-post-4, .sticky-post-5
+{
+margin-bottom: 50px;
+}
+
+/*************************** Archives Page Styles *****************/
+.archives-container .card{
+	border: 0;
+	margin: 25px;
+	padding: 5px;
+}
+.archives-container h2 a{
+	text-decoration: none;
+	color: var(--rihana-main-color);
+}
+.archives-container .card-body{
+	margin: 5px 35px;
+	font-size: 14px;
+}
+
+.archives-container a{
+	text-decoration: none;
+	color: var(--rihana-main-color);
+}
+
+.archives-container ul{
+	list-style-type: none;
+}
+
+.read-more{
+	border: 1px solid var(--rihana-main-color);
+	border
+	border-radius: 6px;
+	padding: 10px 25px;
+}
+
+
+/* Shop Page Styles */
+
+
+
+/************************** Footer Styles ************************/
+
+.footer{
+	background: #111111;
+	padding: 70px 50px;
+}
+
+.footer-bar{
+	background-color: #111111;
+	color: #FFFFFF;
+	padding: 20px;
+	margin: 30px 60px;
+	max-width: 100%;
+}
+.footer-bar img , p , ul {
+	max-width: 100%;
+}
+.footer-bar .product_list_widget img{
+	width: 170px;
+	height: 170px;
+	display: block;
+}
+
+.footer-bar h3{
+	padding-left: 30px;
+	margin-bottom: 10px;
+	color: var(--rihana-main-color);
+	font-size: var(--rihana-h3-text-size);
+
+}
+
+.footer-bar h3 :before {
+    content: "";
+    width: 60px;
+    background: rgba(255,255,255,0.2);
+    position: absolute;
+    height: 2px;
+    top: 30px;
+    left: 30px;
+}
+
+.footer-bar ul {
+	font-size: 16px;
+    display: block;
+    list-style: none;
+}
+
+.footer-bar ul li{
+    line-height: 26px;
+    color: #ddd;
+}
+
+.footer-bar ul li a {
+    line-height: 26px;
+    color: #ddd;
+    display: block;
+    text-decoration: none;
+}
+
+.footer-bar ul li a:hover{
+    line-height: 26px;
+    color: var(--rihana-main-color);
+    display: block;
+}
+
+.footer-bar p{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.footer-top-bar{
+	margin:5px;
+	padding: 20px 30px 20px 40px;
+	background-color: #1d1d1d;
+	color: #FFFFFF;
+	font-size: 24px;
+	text-align: center;
+}
+.footer-top-bar h3{
+	padding: 40px 20px 5px 20px;
+	text-align: center;
+	font-weight: 400;
+	color: var(--rihana-main-color);
+}
+
+.footer-top-bar input{
+	padding: 10px 15px;
+	margin: 4px auto;
+	display: inline-block;
+	border: 0 ;
+}
+.footer-top-bar input[type=submit]{
+	background-color: var(--rihana-main-color);
+	color: #FFFFFF; 
+}
+
+.socials-footer ul {
+    margin: 30px 0;
+    text-align: center;
+    list-style: none;
+}
+.socials-footer ul li {
+    vertical-align: middle;
+    display: inline-block;
+}
+.socials-footer ul li a{
+    color: #ddd;
+    background: #000000;
+    border-radius: 50%;
+    height: 40px;
+    line-height: 45px;
+    width: 40px;
+    font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 3px;
+}
+.socials-footer ul li a:hover {
+    color: #fff;
+    background: var(--rihana-main-color);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.footer-quotes{
+	color: #FFFFFF;
+	margin-top: 60px;
+	text-align: right;
+}
+.footer-credits{
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 80%;
+	text-align: center;
+   	color: #FFFFFF;
+	font-size: 16px;
+}
+ /********** Email Subscribers Plugin Footer Newsletter Form Styles ***********/
+.es-field-wrap
+{
+	display: inline-block;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 799px) {
+ .primary-menu{
+        display: none !important;
+    }
+    .mobile-menu{
+        display: block !important;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 800px) {
+
+ .primary-menu{
+        display: block !important;
+    }
+    .mobile-menu{
+        display: none !important;
+    }
+} 
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
